@@ -1,0 +1,420 @@
+CRITICAL - 2021-12-06 19:01:52 --> syntax error, unexpected token "class"
+#0 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('home', Array, true)
+#2 C:\xampp\htdocs\suratci\app\Controllers\Home.php(27): view('home', Array)
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 20:53:26 --> Undefined array key "login"
+#0 C:\xampp\htdocs\suratci\app\Views\suratin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#4 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#6 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#7 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-06 20:53:27 --> Undefined array key "login"
+#0 C:\xampp\htdocs\suratci\app\Views\suratin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#4 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#6 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#7 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-06 21:02:31 --> Undefined array key "no_surat"
+#0 C:\xampp\htdocs\suratci\app\Views\detailin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\View\View.php(432): CodeIgniter\View\View->render('detailin', NULL, true)
+#4 C:\xampp\htdocs\suratci\app\Views\suratin.php(4): CodeIgniter\View\View->include('detailin')
+#5 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#8 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#9 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#10 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#11 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 21:04:08 --> Array to string conversion
+#0 C:\xampp\htdocs\suratci\app\Views\detailin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\View\View.php(432): CodeIgniter\View\View->render('detailin', NULL, true)
+#4 C:\xampp\htdocs\suratci\app\Views\suratin.php(4): CodeIgniter\View\View->include('detailin')
+#5 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#8 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#9 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#10 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#11 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 21:04:09 --> Array to string conversion
+#0 C:\xampp\htdocs\suratci\app\Views\detailin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\View\View.php(432): CodeIgniter\View\View->render('detailin', NULL, true)
+#4 C:\xampp\htdocs\suratci\app\Views\suratin.php(4): CodeIgniter\View\View->include('detailin')
+#5 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#8 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#9 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#10 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#11 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 21:04:19 --> Undefined array key "no_surat"
+#0 C:\xampp\htdocs\suratci\app\Views\detailin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\View\View.php(432): CodeIgniter\View\View->render('detailin', NULL, true)
+#4 C:\xampp\htdocs\suratci\app\Views\suratin.php(4): CodeIgniter\View\View->include('detailin')
+#5 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#8 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#9 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#10 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#11 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 21:04:21 --> Undefined array key "no_surat"
+#0 C:\xampp\htdocs\suratci\app\Views\detailin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\View\View.php(432): CodeIgniter\View\View->render('detailin', NULL, true)
+#4 C:\xampp\htdocs\suratci\app\Views\suratin.php(4): CodeIgniter\View\View->include('detailin')
+#5 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#8 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#9 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#10 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#11 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 21:05:08 --> Undefined variable $d
+#0 C:\xampp\htdocs\suratci\app\Views\detailin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\View\View.php(432): CodeIgniter\View\View->render('detailin', NULL, true)
+#4 C:\xampp\htdocs\suratci\app\Views\suratin.php(4): CodeIgniter\View\View->include('detailin')
+#5 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#8 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#9 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#10 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#11 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 21:20:50 --> Undefined variable $d
+#0 C:\xampp\htdocs\suratci\app\Views\detailin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\View\View.php(432): CodeIgniter\View\View->render('detailin', NULL, true)
+#4 C:\xampp\htdocs\suratci\app\Views\suratin.php(4): CodeIgniter\View\View->include('detailin')
+#5 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#8 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#9 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#10 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#11 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 21:22:58 --> Undefined variable $d
+#0 C:\xampp\htdocs\suratci\app\Views\detailin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\View\View.php(432): CodeIgniter\View\View->render('detailin', NULL, true)
+#4 C:\xampp\htdocs\suratci\app\Views\suratin.php(4): CodeIgniter\View\View->include('detailin')
+#5 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#8 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#9 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#10 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#11 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 21:22:59 --> Undefined variable $d
+#0 C:\xampp\htdocs\suratci\app\Views\detailin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\View\View.php(432): CodeIgniter\View\View->render('detailin', NULL, true)
+#4 C:\xampp\htdocs\suratci\app\Views\suratin.php(4): CodeIgniter\View\View->include('detailin')
+#5 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#8 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#9 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#10 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#11 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 21:25:18 --> Undefined variable $d
+#0 C:\xampp\htdocs\suratci\app\Views\detailin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\View\View.php(432): CodeIgniter\View\View->render('detailin', NULL, true)
+#4 C:\xampp\htdocs\suratci\app\Views\suratin.php(4): CodeIgniter\View\View->include('detailin')
+#5 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#8 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#9 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#10 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#11 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 21:25:19 --> Undefined variable $d
+#0 C:\xampp\htdocs\suratci\app\Views\detailin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\View\View.php(432): CodeIgniter\View\View->render('detailin', NULL, true)
+#4 C:\xampp\htdocs\suratci\app\Views\suratin.php(4): CodeIgniter\View\View->include('detailin')
+#5 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#8 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#9 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#10 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#11 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 21:47:26 --> syntax error, unexpected variable "$i", expecting ")"
+#0 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#2 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 21:47:27 --> syntax error, unexpected variable "$i", expecting ")"
+#0 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#2 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 21:47:28 --> syntax error, unexpected variable "$i", expecting ")"
+#0 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#2 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 21:47:29 --> syntax error, unexpected variable "$i", expecting ")"
+#0 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#2 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 21:54:08 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#2 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 21:54:09 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#2 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 21:54:13 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#2 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 21:54:22 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#2 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 21:54:23 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#2 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 22:10:58 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 22:11:19 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 22:12:03 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 22:21:44 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 22:21:44 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 22:21:45 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 22:21:46 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 22:21:46 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 22:21:46 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 22:21:47 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 22:21:47 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 22:57:20 --> Unsupported operand types: string + string
+#0 C:\xampp\htdocs\suratci\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#3 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(21): view('suratin', Array)
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#6 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-06 23:04:26 --> Object of class App\Models\SuratIn could not be converted to string
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail('1')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 23:04:55 --> Object of class App\Models\SuratIn could not be converted to string
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail('1')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 23:06:03 --> Cannot use object of type App\Models\SuratIn as array
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail('1')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 23:06:57 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail('1')
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 23:06:57 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail('1')
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 23:06:58 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail('1')
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 23:06:58 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail('1')
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 23:06:58 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail('1')
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 23:06:58 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail('1')
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 23:06:59 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->detail('1')
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

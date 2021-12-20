@@ -1,0 +1,26 @@
+CRITICAL - 2021-12-09 01:09:54 --> view(): Argument #2 ($data) must be of type array, string given, called in C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php on line 46
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(46): view('editin', '1168')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->edit('1168')
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-09 18:58:38 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-12-09 18:58:38 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\suratci\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\suratci\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\suratci\system\Model.php(723): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\suratci\app\Controllers\Home.php(18): CodeIgniter\Model->__call('get', Array)
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-09 19:23:56 --> Object of type CodeIgniter\Session\Session is not callable
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->muncul()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

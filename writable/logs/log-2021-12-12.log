@@ -1,0 +1,478 @@
+CRITICAL - 2021-12-12 04:17:19 --> unlink(C:\xampp\htdocs\suratci\writable\debugbar/debugbar_1639302456.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\suratci\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\Debug\Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1639304239, 20)
+#3 C:\xampp\htdocs\suratci\system\Debug\Toolbar.php(460): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\suratci\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\suratci\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\suratci\system\CodeIgniter.php(300): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-12 04:17:48 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:17:49 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:17:53 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:17:53 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:17:54 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:18:01 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:18:03 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:18:05 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:18:06 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:18:06 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:18:07 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:18:07 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:18:07 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:18:09 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:18:15 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 04:18:16 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(11): session_destroy()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 05:01:04 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->ceklogin()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-12 05:32:25 --> Too few arguments to function App\Controllers\Login::index(), 0 passed in C:\xampp\htdocs\suratci\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-12 05:32:40 --> Undefined constant "App\Controllers\pesan"
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-12 05:32:41 --> Undefined constant "App\Controllers\pesan"
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-12 05:33:23 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #2 ($code) must be of type ?int, string given, called in C:\xampp\htdocs\suratci\app\Controllers\Login.php on line 39
+#0 C:\xampp\htdocs\suratci\app\Controllers\Login.php(39): CodeIgniter\HTTP\RedirectResponse->to('login/index/', 'gagal1')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->ceklogin()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-12 05:33:44 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #2 ($code) must be of type ?int, string given, called in C:\xampp\htdocs\suratci\app\Controllers\Login.php on line 39
+#0 C:\xampp\htdocs\suratci\app\Controllers\Login.php(39): CodeIgniter\HTTP\RedirectResponse->to('login/index/?', 'gagal1')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->ceklogin()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-12 06:20:03 --> CodeIgniter\HTTP\URI::getQuery(): Argument #1 ($options) must be of type array, string given, called in C:\xampp\htdocs\suratci\app\Controllers\Login.php on line 51
+#0 C:\xampp\htdocs\suratci\app\Controllers\Login.php(51): CodeIgniter\HTTP\URI->getQuery('pesan')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->pesan()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-12 06:20:14 --> CodeIgniter\HTTP\URI::getQuery(): Argument #1 ($options) must be of type array, string given, called in C:\xampp\htdocs\suratci\app\Controllers\Login.php on line 51
+#0 C:\xampp\htdocs\suratci\app\Controllers\Login.php(51): CodeIgniter\HTTP\URI->getQuery('pesan')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->pesan()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-12 06:20:15 --> CodeIgniter\HTTP\URI::getQuery(): Argument #1 ($options) must be of type array, string given, called in C:\xampp\htdocs\suratci\app\Controllers\Login.php on line 51
+#0 C:\xampp\htdocs\suratci\app\Controllers\Login.php(51): CodeIgniter\HTTP\URI->getQuery('pesan')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->pesan()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-12 06:20:15 --> CodeIgniter\HTTP\URI::getQuery(): Argument #1 ($options) must be of type array, string given, called in C:\xampp\htdocs\suratci\app\Controllers\Login.php on line 51
+#0 C:\xampp\htdocs\suratci\app\Controllers\Login.php(51): CodeIgniter\HTTP\URI->getQuery('pesan')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->pesan()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-12 06:20:15 --> CodeIgniter\HTTP\URI::getQuery(): Argument #1 ($options) must be of type array, string given, called in C:\xampp\htdocs\suratci\app\Controllers\Login.php on line 51
+#0 C:\xampp\htdocs\suratci\app\Controllers\Login.php(51): CodeIgniter\HTTP\URI->getQuery('pesan')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->pesan()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-12 06:20:15 --> CodeIgniter\HTTP\URI::getQuery(): Argument #1 ($options) must be of type array, string given, called in C:\xampp\htdocs\suratci\app\Controllers\Login.php on line 51
+#0 C:\xampp\htdocs\suratci\app\Controllers\Login.php(51): CodeIgniter\HTTP\URI->getQuery('pesan')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->pesan()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-12 06:20:16 --> CodeIgniter\HTTP\URI::getQuery(): Argument #1 ($options) must be of type array, string given, called in C:\xampp\htdocs\suratci\app\Controllers\Login.php on line 51
+#0 C:\xampp\htdocs\suratci\app\Controllers\Login.php(51): CodeIgniter\HTTP\URI->getQuery('pesan')
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->pesan()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-12 06:23:15 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->pesan()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-12 06:23:24 --> Call to undefined function pesan=gagal1()
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->pesan()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-12 06:30:37 --> Call to undefined function pesan=gagal1()
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->pesan()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-12 06:30:38 --> Call to undefined function pesan=gagal1()
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->pesan()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-12 06:52:05 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 06:52:17 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 06:52:18 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 19:12:00 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:13:05 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:13:06 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:13:06 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:13:07 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:13:07 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:13:20 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:13:38 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:13:57 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:14:32 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:14:33 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:14:33 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:14:34 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:14:34 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:14:39 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\suratci\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\suratci\app\Controllers\Login.php(12): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-12 19:27:04 --> Call to undefined method CodeIgniter\Session\Session::set_flashdata()
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->ceklogin()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-12 19:27:44 --> Call to undefined method CodeIgniter\Session\Session::flashdata()
+#0 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Login->ceklogin()
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-12 21:07:06 --> Undefined variable $dispo
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 57)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-12 21:07:17 --> Undefined variable $dispo
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 57)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-12 21:07:26 --> Undefined variable $dispo
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 57)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-12 21:08:08 --> Undefined variable $dispo
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-12 21:10:42 --> Undefined variable $dispo
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-12 21:13:19 --> Undefined variable $dispo
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-12 21:19:24 --> Undefined variable $dispo
+#0 C:\xampp\htdocs\suratci\app\Controllers\Surat_In.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Surat_In->index()
+#2 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surat_In))
+#3 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\suratci\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

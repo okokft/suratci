@@ -1,0 +1,33 @@
+CRITICAL - 2021-12-05 20:07:31 --> Undefined variable $data
+#0 C:\xampp\htdocs\suratci\app\Views\suratin.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#4 C:\xampp\htdocs\suratci\app\Controllers\Home.php(42): view('suratin', Array)
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Home->suratin()
+#6 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-05 20:07:39 --> Undefined variable $k
+#0 C:\xampp\htdocs\suratci\app\Views\suratin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#4 C:\xampp\htdocs\suratci\app\Controllers\Home.php(42): view('suratin', Array)
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Home->suratin()
+#6 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-05 20:11:27 --> Undefined array key "tgl_Surat"
+#0 C:\xampp\htdocs\suratci\app\Views\suratin.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\suratci\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\suratci\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\suratci\system\Common.php(1097): CodeIgniter\View\View->render('suratin', Array, true)
+#4 C:\xampp\htdocs\suratci\app\Controllers\Home.php(42): view('suratin', Array)
+#5 C:\xampp\htdocs\suratci\system\CodeIgniter.php(824): App\Controllers\Home->suratin()
+#6 C:\xampp\htdocs\suratci\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\suratci\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\suratci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
