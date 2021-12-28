@@ -38,10 +38,15 @@ $routes->get('/suratin', 'Surat_In::index');
 $routes->get('/suratin/detail/(:segment)', 'Surat_In::detail/$1');
 $routes->get('/suratin/edit/(:segment)', 'Surat_In::edit/$1');
 $routes->get('/suratin/hapus/(:segment)', 'Surat_In::hapus/$1');
+$routes->get('/suratin/disposisi/(:segment)/(:segment)', 'Surat_In::dispo/$1/$2');
+$routes->get('/suratin/lihatgbr/(:segment)', 'Surat_In::lihatgbr/$1');
 
 $routes->get('/suratout', 'Surat_Out::index');
-
-$routes->get('/tes', 'coba::display');
+$routes->get('/suratout/detail/(:segment)', 'Surat_Out::detail/$1');
+$routes->get('/suratout/edit/(:segment)', 'Surat_Out::edit/$1');
+$routes->get('/suratout/hapus/(:segment)', 'Surat_Out::hapus/$1');
+$routes->get('/suratout/disposisi/(:segment)/(:segment)', 'Surat_Out::dispo/$1/$2');
+$routes->get('/suratout/lihatgbr/(:segment)', 'Surat_Out::lihatgbr/$1');
 
 /*
  * --------------------------------------------------------------------

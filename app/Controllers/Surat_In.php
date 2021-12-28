@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\SuratIn;
 use CodeIgniter\Database\Database;
+use CodeIgniter\Database\Query;
 
 class Surat_In extends BaseController
 {
@@ -18,7 +19,14 @@ class Surat_In extends BaseController
         }
 
         $dbin = new SuratIn();
-        $query1 = $dbin->orderBy('id', 'DESC')->findAll();
+
+        $dbin->orderBy('id', 'DESC');
+        if(session('akses') != "administrator" and session('akses') != "agendaris")
+        {
+            $dbin->where(['akses' => session('akses')]);
+        }
+        
+        $query1 = $dbin->findAll();
 
         if(session('akses') == "administrator" or session('akses') == "agendaris")
         {
@@ -57,7 +65,7 @@ class Surat_In extends BaseController
             'dispo' => $dispo
         ];
 
-        return view('suratin', $data);
+        return view('in/suratin', $data);
     }
 
     //DETAIL
@@ -70,7 +78,7 @@ class Surat_In extends BaseController
             'data' => $query1
         ];
 
-        return view('detailin', $datanya);
+        return view('in/detailin', $datanya);
     }
 
     //EDIT
@@ -83,7 +91,7 @@ class Surat_In extends BaseController
             'data' => $query1
         ];
 
-        return view('editin', $datanya);
+        return view('in/editin', $datanya);
     }
     public function simpanedit()
     {
@@ -110,7 +118,17 @@ class Surat_In extends BaseController
     public function hapus($id)
     {
         $dbin = new SuratIn();
-        $query1 = $dbin->delete(['id' => $id]);
+
+        $query1 = $dbin->where(['id' => $id])->first();
+
+        if($query1['nama_gbr'] != null){
+            $namagbr = $query1['nama_gbr'];
+            unlink('file/'.$namagbr);
+        }
+
+        //unlink('file/1640072263_15470ea5ffd16c822d95.pdf');
+
+        $dbin->delete(['id' => $id]);
 
         return redirect()->to('/suratin');
     }
@@ -119,12 +137,17 @@ class Surat_In extends BaseController
     public function tambah()
     {
         $dbin = new SuratIn();
-
-        $file = $this->request->getFile('gbr');
-
-        $name = $file->getRandomName();
-
-        $file->move('file',$name);    
+        
+        if($this->request->getFile('gbr')->isValid())
+        {
+            $file = $this->request->getFile('gbr');
+            $name = $file->getRandomName();
+            $file->move('file',$name);    
+        }
+        else
+        {
+            $name = null;
+        }
 
         $data =
             [
@@ -143,17 +166,35 @@ class Surat_In extends BaseController
     }
 
     //DISPOSISI
-    public function disposisi()
+    public function dispo($id,$ds)
     {
         $dbin = new SuratIn();
 
-        $disposisi = $this->request->getVar('dispo');
-        $id = $this->request->getVar('id_surat');
-
-        $dbin->set('akses', $disposisi);
+        $dbin->set('akses', $ds);
         $dbin->where('id', $id);
         $dbin->update();
 
         return redirect()->to('/suratin');
+    }
+
+    //LIHAT GAMBAR
+    public function lihatgbr($id)
+    {
+        helper('html');
+        $dbin = new SuratIn();
+        $query1 = $dbin->where(['id' => $id])->first();
+
+        $namagbr = $query1['nama_gbr'];
+        
+        $pathinfo = pathinfo('file/'.$namagbr, PATHINFO_EXTENSION);
+        //dd($pathinfo);
+
+        $data =
+        [
+            'namagbr' => $namagbr,
+            'pathinfo' => $pathinfo
+        ];
+
+        return view('lihatgbr', $data);
     }
 }
