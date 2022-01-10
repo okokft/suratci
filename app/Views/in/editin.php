@@ -7,7 +7,7 @@
 <div class="container">
 
 	<div class="edit-form"><b>
-        <form action="<?= base_url('surat_in/simpanedit') ?>" method="post" enctype="application/x-www-form-urlencoded">     
+        <form action="<?= base_url('Surat_In/simpanedit') ?>" method="post" enctype="application/x-www-form-urlencoded">     
             <div class="form-group">
                 <label for="no_surat">No. Surat</label>
                 <input type="hidden" name="id" value="<?php echo $data['id']; ?>">

@@ -5,67 +5,37 @@
 </div>
 
 <div class="table-responsive container-fluid  mt-2 py-3 rounded" >
-    <?php
-        if (session('level') == "agendaris" or session('level') == "administrator") { ?> 
-        <!-- <a href="<?= base_url('/surat_in/tambah') ?>" class="btn btn-md btn-danger mb-3"><i class="fas fa-plus"></i></a> -->
-        <a href="#" class="btn btn-md btn-danger mb-3" data-toggle="modal" data-target="#tambahsurat"><i class="fas fa-plus"></i></a>
-    <?php } ?>
+    <div class="btn-group">
+        <?php
+            if (session('level') == "agendaris" or session('level') == "administrator") { ?> 
+            <!-- <a href="<?= base_url('/Surat_In/tambah') ?>" class="btn btn-md btn-danger mb-3"><i class="fas fa-plus"></i></a> -->
+            <a href="#" class="btn btn-md btn-danger mb-3 mr-1 rounded" data-toggle="modal" data-target="#tambahsurat"><i class="fas fa-plus"></i></a>
+        <?php } ?>
+        <div class="dropdown">
+            <a class="btn btn-secondary mb-3 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                <?= $tahun ?>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <?php for ($x = $tahunawal; $x <= $tahunsekarang; $x++) { ?>
+                    <a class="dropdown-item" href="<?= base_url('/suratin'),"/",$x ?>"><?= $x ?></a>
+                <?php }?>
+            </div>
+        </div>
+    </div>
     <table  class="table table-info table display rounded" id="table_id" style="overflow-x:auto;">
-        <thead>
-            <tr>
-                <th  style="width: 10%">No.</th>
-                <th style="width: 10%">No Surat</th>
-                <th>Perihal</th>
-                <th style="width: 10%">Tgl Surat</th>
-                <th style="width: 15%">Asal</th>
-                <th style="width: 5%">Aksi</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php $i = 1; ?>
-            <?php foreach($datadbin as $d) :?>
-            <tr>
-                <td scope="row"><?= $i++ ?></td>
-                <td><?= $d['no_surat'] ?>
-                    <b><?= $d['akses'];?></b></td>
-                <td><?= $d['perihal'] ?>
-                <?php if($d['nama_gbr'] != null){ ?>
-                    <i class="far fa-file"></i></td>
-                <?php } ?>
-                <td><?= $d['tgl_surat'] ?></td>
-                <td><?= $d['asal'] ?></td>
-                <td>
-                    <div class="btn-group">
-                        <div class="btn-group">                          
-                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">Aksi</button>
-                            <div class="dropdown-menu">
-                                <a href="<?= base_url('/suratin/detail/'),'/',$d['id'] ?>" class="dropdown-item">Detail</a>
-                                <?php if (session('level') == "agendaris" or session('level') == "kadis" or session('level') == "administrator"){ ?>
-                                    <a href="<?= base_url('/suratin/edit/'),'/',$d['id'] ?>" class="dropdown-item">Edit</a>
-                                    <form method="POST" action="<?= base_url('/surat_in/hapus'),'/',$d['id'] ?>">
-                                        <input type="submit" class="dropdown-item" value="Hapus" onclick="return hapus()"></button>
-                                    </form>
-                                <?php } ?>
-                                <?php if($d['nama_gbr'] != null) {?>
-                                    <a href="<?= base_url('/suratin/lihatgbr/'),'/',$d['id'] ?>" class="dropdown-item">Lihat Gambar</a>
-                                <?php } ?>
-                            </div>        
-                        </div>
-                        <?php if (session('level') != "kasubag" and session('level') != "kasi") { ?>
-                            <div class="btn-group" >
-                                <button type="button "class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">Disposisi</button>
-                                <div class="dropdown-menu scrollable-menu">
-                                    <?php foreach($dispo as $ds) : ?>
-                                        <a href="<?= base_url('/suratin/disposisi/'),'/',$d['id'],'/',$ds ?>" class="dropdown-item"><?= $ds ?></a>
-                                    <?php endforeach ?>
-                                </div>
-                            </div>
-                        <?php } ?>
-                    </div>   
-                </td>
-            </tr>
-            <?php endforeach ?>
-        </tbody>
+            <thead>
+                <tr>
+                    <th  style="width: 10%">No.</th>
+                    <th style="width: 10%">No Surat</th>
+                    <th>Perihal</th>
+                    <th style="width: 10%">Tgl Surat</th>
+                    <th style="width: 15%">Asal</th>
+                    <th style="width: 5%">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+            </tbody>
     </table>
 </div>
 
@@ -80,7 +50,7 @@
             </button>
         </div>
         <div class="modal-body">
-        <form action="<?= base_url('surat_in/tambah') ?>" method="post" enctype="multipart/form-data">     
+        <form action="<?= base_url('Surat_In/tambah') ?>" method="post" enctype="multipart/form-data">     
             <div class="form-group">
                 <label for="no_surat">No. Surat</label>
                 <input type="text" class="form-control" name="no_surat" required="required">
@@ -119,8 +89,39 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.6.0/dt-1.11.3/r-2.2.9/datatables.min.js"></script>
 
-<script type="text/javascript">
-    function hapus()
+<script>
+$(document).ready(function() {
+    $('#table_id').DataTable( {
+        'serverMethod': 'post',
+        'ajax': {
+            url :"<?= base_url('Surat_In/ajax_in') ?>",
+        },
+        'responsive': true,
+        "language": {
+        url: 'https://cdn.datatables.net/plug-ins/1.10.24/i18n/Indonesian.json'
+        },
+        "iDisplayLength": 10,
+        'columns': [
+            { data: 'no', 'searchable': false },
+            { data: 'no_surat' },
+            { data: 'perihal' },
+            { data: 'tgl_surat' },
+            { data: 'asal' },
+            { data: 'aksi', 'searchable': false }
+        ],
+        "columnDefs": [
+		            { responsivePriority: 1, targets: 1 },
+		            { responsivePriority: 2, targets: 2 },
+                    { responsivePriority: 3, targets: 3 }
+		],
+		'deferRender': true
+    } );
+} );
+$(".custom-file-input").on("change", function() {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+function hapus()
     {
         let text = "Apakah Anda Yakin Untuk Menghapus?"
         if(confirm(text)==true){
@@ -130,29 +131,4 @@
             return false;
         }
     };
-
-    $(document).ready(function() {
-    var table = $('#table_id').DataTable( {
-        responsive: true,
-        "language": {
-        url: 'https://cdn.datatables.net/plug-ins/1.10.24/i18n/Indonesian.json'
-        },
-        "iDisplayLength": 10,
-        "columns":[
-            { 'searchable': false },
-            null,
-            null,
-            null,
-            null,
-            { 'searchable': false },
-        ]
-    } );
-      
-});
-$(".custom-file-input").on("change", function() {
-        var fileName = $(this).val().split("\\").pop();
-        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-    });
 </script>
-
-<?= $this->include('assets/footer') ?>

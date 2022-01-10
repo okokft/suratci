@@ -31,7 +31,7 @@
           <img class="" src="<?= base_url('/img/inbox.png') ?>" style="width:50%;min-height=20%">
         </center>
         <div class="card-body text-center">
-        <h2><?= $hslIn ?><a href="<?= base_url("/suratin") ?>" class="btn btn-sm stretched-link"></a>Surat Masuk</h2>
+        <h2><?= $hslIn ?><a href="<?= base_url("/suratin"),"/",date('Y') ?>" class="btn btn-sm stretched-link"></a>Surat Masuk</h2>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
           <img class="" src="<?= base_url('/img/outbox.png') ?>" style="width:50%;min-height=20%">
         </center>
         <div class="card-body text-center">
-        <h2><?= $hslOut ?><a href="<?= base_url("/suratout") ?>" class="btn btn-sm stretched-link"></a>Surat Keluar</h2>
+        <h2><?= $hslOut ?><a href="<?= base_url("/suratout"),"/",date('Y') ?>" class="btn btn-sm stretched-link"></a>Surat Keluar</h2>
         </div>
       </div>
     </div>

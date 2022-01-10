@@ -8,13 +8,17 @@ use CodeIgniter\Database\Database;
 
 class Home extends BaseController
 {
+    public function __construct()
+    {
+        $this->dbin = new SuratIn();
+        $this->dbout = new SuratOut();
+        session();
+        helper('cookie');
+    }
+
     //HALAMAN AWAL
     public function index()
-    {
-        $session = session();
-        helper("cookie");
-        
-        
+    {          
         if(get_cookie('nama') != null and !isset($_SESSION['nama']))
         {
             return redirect()->to('login/logincookie');
@@ -24,11 +28,8 @@ class Home extends BaseController
             return redirect()->to('login');
         }
 
-        $dbin = new SuratIn();
-        $dbout = new SuratOut();
-
-        $query1 = $dbin->get();
-        $query2 = $dbout->get();
+        $query1 = $this->dbin->get();
+        $query2 = $this->dbout->get();
 
         $hasil1 = $query1->getNumRows();
         $hasil2 = $query2->getNumRows();
@@ -37,5 +38,16 @@ class Home extends BaseController
         $data['hslOut'] =  $hasil2;
 
         return view('home', $data);
+    }
+
+    //HALAMAN ABOUT
+    public function about()
+    {
+        if(!isset($_SESSION['nama']))
+        {
+            return redirect()->to('/login');
+        }
+        
+        return view('about');
     }
 }

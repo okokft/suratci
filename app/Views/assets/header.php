@@ -27,15 +27,18 @@
 
     <style>
     @media screen and (max-width: 480px) {
-    .hilang {
-        display: none;
-        }
-    .kecil {
-        padding: 10px;
-        }
-    .mh {
-        max-height: 50px;
-        }
+        body {
+            font-size: 14px;
+        }    
+        .hilang {
+            display: none;
+            }
+        .kecil {
+            padding: 10px;
+            }
+        .mh {
+            max-height: 50px;
+            }
     }
     </style>
 
@@ -43,7 +46,7 @@
 </head>
 
 <body background="<?php echo base_url('/img/bgnya.png') ?>" style="background-attachment:fixed"> 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="<?= base_url() ?>">E-Surat</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,13 +55,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('/suratin') ?>">Surat Masuk</a>
+                        <a class="nav-link" href="<?= base_url('/suratin'),"/",date('Y') ?>">Surat Masuk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('/suratout') ?>">Surat Keluar</a>
+                        <a class="nav-link" href="<?= base_url('/suratout'),"/",date('Y') ?>">Surat Keluar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="<?= base_url('about') ?>">About</a>
                     </li>
             </ul>
             <ul class="navbar-nav">
@@ -71,5 +74,7 @@
                 </ul>
         </div>
     </nav>
+    <br>
+    <br>
 
     

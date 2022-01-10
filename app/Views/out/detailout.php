@@ -30,7 +30,7 @@
         </div>   
     </form>
     <div>
-        <a href="<?= base_url('/suratout')?>" class="btn btn-success btn-block">Kembali</a>
+        <a href="<?= base_url('/suratout'),"/",session('tahun')?>" class="btn btn-success btn-block">Kembali</a>
     </div>    
     <br/>
 

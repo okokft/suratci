@@ -68,8 +68,8 @@
         </div><div class="col-8">
         <center>
             &nbsp;
-            <h2><b>Dinas Kesehatan Kabupaten Bondowoso</b></h2>
-            <h4>Aplikasi Arsip Surat Internal</h4>
+            <h1><b>Dinas Kesehatan Kabupaten Bondowoso</b></h1>
+            <h3>Aplikasi Arsip Surat Internal</h3>
         </center>
         </div>
         <div class="col-2">
