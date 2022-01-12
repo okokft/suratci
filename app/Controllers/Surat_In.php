@@ -6,6 +6,9 @@ use App\Controllers\BaseController;
 use App\Models\SuratIn;
 use CodeIgniter\Database\Database;
 use CodeIgniter\Database\Query;
+use PHPUnit\Framework\Constraint\IsEqualIgnoringCase;
+
+use function PHPUnit\Framework\equalToIgnoringCase;
 
 class Surat_In extends BaseController
 {
@@ -42,17 +45,17 @@ class Surat_In extends BaseController
     public function ajax_in()
     {
         $this->db->orderBy('id', 'DESC');
-        if(session('akses') != "administrator" and session('akses') != "agendaris")
-        {
-            $this->db->where(['akses' => session('akses')]);
-        }
+        // if(session('akses') != "administrator" and session('akses') != "agendaris")
+        // {
+        //     $this->db->where(['akses' => session('akses')]);
+        // }
         $this->db->where(['YEAR(tgl_surat)' => session('tahun')]);
         
         $query = $this->db->findAll();
 
         $data = [];
         $no = 0;     
-        $dispo = ['agendaris', 'KADIS', 'sekdin', 'kabidp2', 'kabidsdk', 'kabidkesmas', 'kabidyankes', 'p2pm', 'p2ptm', 'surveilans', 'sdmk', 'farmasi', 'alkes', 'promkes', 'kesling', 'kgm', 'primer', 'kestrad', 'rujukan', 'piep', 'keuangan', 'up', 'ifk', 'labkesda'];
+        $dispo = ['agendaris', 'arsip', 'KADIS', 'sekdin', 'piep', 'keuangan', 'up', 'kabidp2', 'p2pm', 'p2ptm', 'surveilans', 'kabidsdk', 'sdmk', 'farmasi', 'alkes', 'kabidkesmas', 'promkes', 'kesling', 'kgm', 'kabidyankes', 'primer', 'kestrad', 'rujukan', 'ifk', 'labkesda'];
 
         foreach($query as $d)
         {
@@ -89,76 +92,87 @@ class Surat_In extends BaseController
                     $daftardispo = '<a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[0] .'" class="dropdown-item">'.$dispo[0] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[1] .'" class="dropdown-item">'.$dispo[1] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[2] .'" class="dropdown-item">'.$dispo[2] .'</a>
+                                    <div class="dropdown-divider"></div>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[3] .'" class="dropdown-item">'.$dispo[3] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[4] .'" class="dropdown-item">'.$dispo[4] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[5] .'" class="dropdown-item">'.$dispo[5] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[6] .'" class="dropdown-item">'.$dispo[6] .'</a>
+                                    <div class="dropdown-divider"></div>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[7] .'" class="dropdown-item">'.$dispo[7] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[8] .'" class="dropdown-item">'.$dispo[8] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[9] .'" class="dropdown-item">'.$dispo[9] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[10] .'" class="dropdown-item">'.$dispo[10] .'</a>
+                                    <div class="dropdown-divider"></div>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[11] .'" class="dropdown-item">'.$dispo[11] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[12] .'" class="dropdown-item">'.$dispo[12] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[13] .'" class="dropdown-item">'.$dispo[13] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[14] .'" class="dropdown-item">'.$dispo[14] .'</a>
+                                    <div class="dropdown-divider"></div>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[15] .'" class="dropdown-item">'.$dispo[15] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[16] .'" class="dropdown-item">'.$dispo[16] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[17] .'" class="dropdown-item">'.$dispo[17] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[18] .'" class="dropdown-item">'.$dispo[18] .'</a>
+                                    <div class="dropdown-divider"></div>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[19] .'" class="dropdown-item">'.$dispo[19] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[20] .'" class="dropdown-item">'.$dispo[20] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[21] .'" class="dropdown-item">'.$dispo[21] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[22] .'" class="dropdown-item">'.$dispo[22] .'</a>
+                                    <div class="dropdown-divider"></div>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[23] .'" class="dropdown-item">'.$dispo[23] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[24] .'" class="dropdown-item">'.$dispo[24] .'</a>
                                     ';
                 }
                 else if(session('akses') == "KADIS")
                 {
                     $daftardispo = '<a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[0] .'" class="dropdown-item">'.$dispo[0] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[2] .'" class="dropdown-item">'.$dispo[2] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[3] .'" class="dropdown-item">'.$dispo[3] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[4] .'" class="dropdown-item">'.$dispo[4] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[5] .'" class="dropdown-item">'.$dispo[5] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[6] .'" class="dropdown-item">'.$dispo[6] .'</a>';
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[7] .'" class="dropdown-item">'.$dispo[7] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[11] .'" class="dropdown-item">'.$dispo[11] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[15] .'" class="dropdown-item">'.$dispo[15] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[19] .'" class="dropdown-item">'.$dispo[19] .'</a>';
                 }
                 else if(session('akses') == "sekdin")
                 {
-                    $daftardispo = '<a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[19] .'" class="dropdown-item">'.$dispo[19] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[20] .'" class="dropdown-item">'.$dispo[20] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[21] .'" class="dropdown-item">'.$dispo[21] .'</a>';
+                    $daftardispo = '<a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[4] .'" class="dropdown-item">'.$dispo[4] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[5] .'" class="dropdown-item">'.$dispo[5] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[6] .'" class="dropdown-item">'.$dispo[6] .'</a>';
                 }
                 else if(session('akses') == "kabidp2")
                 {
-                    $daftardispo = '<a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[7] .'" class="dropdown-item">'.$dispo[7] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[8] .'" class="dropdown-item">'.$dispo[8] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[9] .'" class="dropdown-item">'.$dispo[9] .'</a>';
+                    $daftardispo = '<a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[8] .'" class="dropdown-item">'.$dispo[8] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[9] .'" class="dropdown-item">'.$dispo[9] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[10] .'" class="dropdown-item">'.$dispo[10] .'</a>';
                 }
                 else if(session('akses') == "kabidsdk")
                 {
-                    $daftardispo = '<a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[10] .'" class="dropdown-item">'.$dispo[10] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[11] .'" class="dropdown-item">'.$dispo[11] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[12] .'" class="dropdown-item">'.$dispo[12] .'</a>';
+                    $daftardispo = '<a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[12] .'" class="dropdown-item">'.$dispo[12] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[13] .'" class="dropdown-item">'.$dispo[13] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[14] .'" class="dropdown-item">'.$dispo[14] .'</a>';
                 }
                 else if(session('akses') == "kabidkesmas")
-                {
-                    $daftardispo = '<a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[13] .'" class="dropdown-item">'.$dispo[13] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[14] .'" class="dropdown-item">'.$dispo[14] .'</a>
-                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[15] .'" class="dropdown-item">'.$dispo[15] .'</a>';
-                }
-                else if(session('akses') == "kabidyankes")
                 {
                     $daftardispo = '<a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[16] .'" class="dropdown-item">'.$dispo[16] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[17] .'" class="dropdown-item">'.$dispo[17] .'</a>
                                     <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[18] .'" class="dropdown-item">'.$dispo[18] .'</a>';
                 }
+                else if(session('akses') == "kabidyankes")
+                {
+                    $daftardispo = '<a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[20] .'" class="dropdown-item">'.$dispo[20] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[21] .'" class="dropdown-item">'.$dispo[21] .'</a>
+                                    <a href="'.base_url('/suratin/disposisi/').'/'.$d['id'].'/'.$dispo[22] .'" class="dropdown-item">'.$dispo[22] .'</a>';
+                }
                 else{
                     $daftardispo = [];
                 }
-                $btndispo = '<div class="btn-group" >
-                                <button type="button "class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">Disposisi</button>
-                                <div class="dropdown-menu scrollable-menu">    
-                                '.$daftardispo.'
-                            ';
+
+                if(strtolower($d['akses']) == strtolower(session('akses')) or session('level') == "agendaris")
+                {
+                    $btndispo = '<div class="btn-group" >
+                                    <button type="button "class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">Disposisi</button>
+                                    <div class="dropdown-menu scrollable-menu" style="height: auto; max-height: 100px; overflow-x: hidden; overflow-y: auto">    
+                                    '.$daftardispo.'
+                                ';
+                }
             }
 
             //Rekap Data Ke Dalam AJAX
@@ -172,7 +186,7 @@ class Surat_In extends BaseController
             $row['aksi'] = '<div class="btn-group">
                                 <div class="btn-group">                          
                                     <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">Aksi</button>
-                                    <div class="dropdown-menu">
+                                    <div class="dropdown-menu" style="height: auto; max-height: 100px; overflow-x: hidden; overflow-y: auto">
                                         '.$btndetail.''.$btnedit.''.$btnhapus.''.$btngambar.'
                                     </div>
                                 </div>

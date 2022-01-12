@@ -98,7 +98,8 @@ $(document).ready(function() {
             'url' :"<?= base_url('Surat_Out/ajax_out') ?>",
             'type' : "POST"
         },
-        'responsive': true,
+        //'responsive': true,
+        'scrollX': true,
         "language": {
         url: 'https://cdn.datatables.net/plug-ins/1.10.24/i18n/Indonesian.json'
         },
@@ -120,9 +121,9 @@ $(document).ready(function() {
     } );
 } );
 $(".custom-file-input").on("change", function() {
-        var fileName = $(this).val().split("\\").pop();
-        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-    });
+    var fileName = $(this).val().split("\\").pop();
+    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
 function hapus()
     {
         let text = "Apakah Anda Yakin Untuk Menghapus?"

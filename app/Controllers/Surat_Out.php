@@ -43,10 +43,10 @@ class Surat_Out extends BaseController
     {
         $this->db->orderBy('YEAR(tgl_surat)', 'DESC');
         $this->db->orderBy('no_urut', 'DESC');
-        if(session('akses') != "administrator" and session('akses') != "agendaris")
-        {
-            $this->db->where(['akses' => "accept"]);
-        }
+        // if(session('akses') != "administrator" and session('akses') != "agendaris")
+        // {
+        //     $this->db->where(['akses' => "accept"]);
+        // }
         $this->db->where(['YEAR(tgl_surat)' => session('tahun')]);
 
         $query = $this->db->findAll();
@@ -89,7 +89,7 @@ class Surat_Out extends BaseController
                                 ';
                 $btndispo = '<div class="btn-group" >
                             <button type="button "class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">Disposisi</button>
-                            <div class="dropdown-menu scrollable-menu">    
+                            <div class="dropdown-menu scrollable-menu" style="height: auto; max-height: 100px; overflow-x: hidden; overflow-y: auto">    
                             '.$daftardispo.'
                             ';
             }
@@ -100,7 +100,7 @@ class Surat_Out extends BaseController
                                 ';
                 $btndispo = '<div class="btn-group" >
                             <button type="button "class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">Disposisi</button>
-                            <div class="dropdown-menu scrollable-menu">    
+                            <div class="dropdown-menu scrollable-menu" style="height: auto; max-height: 100px; overflow-x: hidden; overflow-y: auto">    
                             '.$daftardispo.'
                             ';
             }
@@ -115,7 +115,7 @@ class Surat_Out extends BaseController
             $row['aksi'] = '<div class="btn-group">
                                 <div class="btn-group">                          
                                     <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">Aksi</button>
-                                    <div class="dropdown-menu">
+                                    <div class="dropdown-menu" style="height: auto; max-height: 100px; overflow-x: hidden; overflow-y: auto">
                                         '.$btndetail.''.$btnedit.''.$btnhapus.''.$btngambar.'
                                     </div>
                                 </div>

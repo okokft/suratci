@@ -96,7 +96,8 @@ $(document).ready(function() {
         'ajax': {
             url :"<?= base_url('Surat_In/ajax_in') ?>",
         },
-        'responsive': true,
+        //'responsive': true,
+        'scrollX': true,
         "language": {
         url: 'https://cdn.datatables.net/plug-ins/1.10.24/i18n/Indonesian.json'
         },
