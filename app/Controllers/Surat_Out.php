@@ -224,9 +224,16 @@ class Surat_Out extends BaseController
                 'nama_gbr' => $name
             ];
 
-        $this->db->insert($data);
+        $upload = $this->db->insert($data);
 
-        return redirect()->to('/suratout/'.session('tahun'));
+        if($upload){
+            session()->setFlashdata(array('pesan' => "sukses"));
+            return redirect()->to('/suratout/'.session('tahun'));
+        }
+        else{
+            session()->setFlashdata(array('pesan' => "gagal"));
+            return redirect()->to('/suratout/'.session('tahun'));
+        }
     }
 
     //DISPOSISI

@@ -291,9 +291,16 @@ class Surat_In extends BaseController
                 'nama_gbr' => $name
             ];
 
-        $this->db->insert($data);
+        $upload = $this->db->insert($data);
 
-        return redirect()->to('/suratin/'.session('tahun'));
+        if($upload){
+            session()->setFlashdata(array('pesan' => "sukses"));
+            return redirect()->to('/suratin/'.session('tahun'));
+        }
+        else{
+            session()->setFlashdata(array('pesan' => "gagal"));
+            return redirect()->to('/suratin/'.session('tahun'));
+        }
     }
 
     //DISPOSISI

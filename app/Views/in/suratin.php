@@ -1,5 +1,23 @@
 <?= $this->include('assets/header') ?>
 
+<!-- Pesan Upload -->
+<?php if(session()->getflashdata('pesan') == "gagal") { ?>
+    <div class="alert alert-warning alert-dismissible fade show mt-2" role="alert">
+        <strong>Gagal - </strong> Input Surat Gagal. Silahkan Coba Kembali..
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php } ?>
+<?php if(session()->getflashdata('pesan') == "sukses") { ?>
+    <div class="alert alert-warning alert-dismissible fade show mt-2" role="alert">
+        <strong>Sukses - </strong> Surat Berhasil di Upload..
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php } ?>
+
 <div class="container-fluid mt-4">
     <h1 class="text-center">Surat Masuk</h1>
 </div>
